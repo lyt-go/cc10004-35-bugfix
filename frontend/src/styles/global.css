@@ -35,3 +35,61 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+
+/* ---- 画像 / 分流联动页 ---- */
+.mono { font-family: 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 12px; }
+.muted { color: var(--muted); }
+.block { display: block; }
+.small-text { font-size: 12px; }
+.chip { display: inline-block; margin-right: 6px; }
+.row-muted { background: #fafbfc; color: #475467; }
+.row-actions.vertical { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+.inline-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.btn.small { padding: 3px 8px; font-size: 12px; }
+.link.danger { color: #b42318; }
+
+.badge { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px; border: 1px solid transparent; white-space: nowrap; }
+.badge-green { background: #ecfdf3; color: #067647; border-color: #abefc6; }
+.badge-red { background: #fef3f2; color: #b42318; border-color: #fecdca; }
+.badge-amber { background: #fffaeb; color: #b54708; border-color: #fedf89; }
+.badge-blue { background: #eff8ff; color: #175cd3; border-color: #b2ddff; }
+.badge-gray { background: #f2f4f7; color: #475467; border-color: #d0d5dd; }
+.badge-purple { background: #f4f3ff; color: #5925dc; border-color: #d9d6fe; }
+
+.feedback { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; border-radius: 8px; padding: 8px 12px; margin: 10px 0; font-size: 13px; border: 1px solid var(--border); background: #fff; }
+.feedback-ok { border-color: #abefc6; background: #ecfdf3; }
+.feedback-error { border-color: #fecdca; background: #fef3f2; }
+.feedback-info { border-color: #b2ddff; background: #eff8ff; }
+.feedback-detail { color: var(--muted); font-size: 12px; }
+
+.diagnostic-panel { border: 1px solid #fecdca; border-radius: 8px; background: #fffbfa; padding: 10px 12px; margin: 10px 0; }
+.diagnostic-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.diagnostic-list { margin: 8px 0 0; padding-left: 18px; }
+.diagnostic-item { margin-bottom: 8px; font-size: 12px; }
+.diagnostic-title { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.diagnostic-item p { margin: 4px 0; }
+.diagnostic-forward, .diagnostic-interrupted-forward { }
+
+.empty-block { border: 1px dashed var(--border); border-radius: 8px; background: #fff; padding: 28px; text-align: center; color: var(--muted); display: flex; flex-direction: column; gap: 6px; }
+.empty-block strong { color: #1f2937; }
+
+.detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; margin-bottom: 14px; }
+.detail-card { border: 1px solid var(--border); border-radius: 8px; background: #fff; padding: 12px; }
+.detail-card p { font-size: 13px; margin: 6px 0; }
+.section-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; }
+.section-head h3 { margin: 0; font-size: 14px; }
+.kv { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; padding: 3px 0; border-bottom: 1px dashed #eef2f7; }
+.kv-label { color: var(--muted); }
+.kv-value { text-align: right; }
+.layer-item { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; padding: 5px 0; border-bottom: 1px dashed #eef2f7; }
+
+.tab-bar { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 10px; }
+.tab { border: 1px solid var(--border); background: #fff; border-radius: 6px; padding: 5px 12px; font-size: 13px; cursor: pointer; }
+.tab.active { background: var(--brand); border-color: var(--brand); color: #fff; }
+
+.audit-panel, .fault-panel { margin-top: 16px; border: 1px solid var(--border); border-radius: 8px; background: #fff; padding: 12px; }
+.radio-item { font-size: 13px; display: inline-flex; align-items: center; gap: 4px; }
+.whitelist-add input { border: 1px solid var(--border); border-radius: 6px; padding: 5px 8px; font-size: 13px; min-width: 200px; }
+.text-ok { color: #067647; }
+.text-error { color: #b42318; }
+

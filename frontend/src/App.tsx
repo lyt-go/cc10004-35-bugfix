@@ -12,10 +12,12 @@ import UserpathView from './views/userpath'
 import RetentionView from './views/retention'
 import EventdefView from './views/eventdef'
 import ProfileView from './views/profile'
+import ProfileDetailRoute from './views/profile/ProfileDetailRoute'
 import HeatmapView from './views/heatmap'
 import BenchmarkView from './views/benchmark'
 import AuditcheckView from './views/auditcheck'
 import AbgroupView from './views/abgroup'
+import AbgroupDetailRoute from './views/abgroup/AbgroupDetailRoute'
 import DatavizView from './views/dataviz'
 import SentimentView from './views/sentiment'
 import LifecycleView from './views/lifecycle'
@@ -55,10 +57,12 @@ export default function App() {
           <Route path="/retention" element={<RetentionView />} />
           <Route path="/eventdef" element={<EventdefView />} />
           <Route path="/profile" element={<ProfileView />} />
+          <Route path="/profile/:versionId" element={<ProfileDetailRoute />} />
           <Route path="/heatmap" element={<HeatmapView />} />
           <Route path="/benchmark" element={<BenchmarkView />} />
           <Route path="/auditcheck" element={<AuditcheckView />} />
           <Route path="/abgroup" element={<AbgroupView />} />
+          <Route path="/abgroup/:schemeCode" element={<AbgroupDetailRoute />} />
           <Route path="/dataviz" element={<DatavizView />} />
           <Route path="/sentiment" element={<SentimentView />} />
           <Route path="/lifecycle" element={<LifecycleView />} />
